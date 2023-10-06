@@ -1,0 +1,89 @@
+@import "../../styles/constants.scss";
+
+.wrapper {
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    z-index: 1;
+    min-height: 35vh;
+    height: 100%;
+
+    .upperElements {
+      @media (max-width: $sm) {
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .lowerElements {
+      @media (max-width: $xxl) {
+        margin-top: 4rem;
+        justify-content: space-between;
+      }
+
+      @media (max-width: $sm) {
+        gap: 2rem;
+      }
+      margin-top: 22rem;
+      gap: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .name {
+        display: flex;
+        align-items: center;
+      }
+      .description {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        svg {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .mainImage {
+      @media (max-width: $xxl) {
+        position: relative;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      position: absolute;
+      bottom: -2rem;
+      margin: auto;
+      // background-image: url("../../../public/images/splash.png");
+      // background-repeat: no-repeat;
+      // background-size: 23rem;
+      left: 33%;
+
+      img {
+        @media (max-width: $xxl) {
+          width: 30rem;
+        }
+      }
+    }
+
+    .email {
+      @media (max-width: $lg) {
+        position: relative;
+        display: none;
+      }
+
+      position: absolute;
+      top: 50%;
+      color: orange;
+      left: 0;
+    }
+  }
+}

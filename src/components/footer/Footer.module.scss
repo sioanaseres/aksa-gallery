@@ -1,0 +1,47 @@
+@import "../../styles/constants.scss";
+
+.wrapper {
+  .container {
+    flex-direction: column;
+
+    .contactDetails {
+      @media (max-width: $lg) {
+        flex-direction: column;
+      }
+      margin-top: 2rem;
+      gap: 2rem;
+
+      .left {
+        @media (max-width: $lg) {
+          max-width: 90%;
+        }
+        font-size: 1.2rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 30%;
+
+        > div {
+          a {
+            text-decoration: none;
+            color: orange;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .right {
+        @media (max-width: $lg) {
+          max-width: 90%;
+        }
+        max-width: 60%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

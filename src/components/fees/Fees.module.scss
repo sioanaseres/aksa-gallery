@@ -1,0 +1,58 @@
+@import "../../styles/constants.scss";
+
+.wrapper {
+  background: white;
+  .container {
+    .fees {
+      width: 100%;
+      flex-direction: column;
+      gap: 1.4rem;
+      position: relative;
+
+      .area {
+        @media (max-width: $md) {
+          flex-direction: column;
+        }
+        width: 100%;
+
+        line-height: 40px;
+        margin-bottom: 2rem;
+
+        > div {
+          flex: 1;
+        }
+
+        .description {
+          @media (max-width: $md) {
+            max-width: 90%;
+            margin-bottom: 2rem;
+          }
+          max-width: 50%;
+
+          h3 {
+            margin-bottom: 1rem;
+          }
+
+          .feeList {
+            list-style-type: none;
+          }
+        }
+        .image {
+          @media (max-width: $md) {
+            max-width: 100%;
+          }
+
+          img {
+            @media (max-width: $md) {
+              width: 100%;
+            }
+            width: 80%;
+            height: auto;
+            border-radius: 2%;
+            box-shadow: 0px 21px 13px rgba(0, 0, 0, 0.05);
+          }
+        }
+      }
+    }
+  }
+}

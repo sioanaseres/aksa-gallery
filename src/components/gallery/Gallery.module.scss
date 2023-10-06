@@ -1,0 +1,41 @@
+@import "../../styles/constants.scss";
+
+.wrapper {
+  background: white;
+
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+
+    .heading {
+      width: 100%;
+    }
+
+    .showCase {
+      width: 100%;
+      gap: 1rem;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .imgContainer {
+        @media (max-width: $sm) {
+          width: 40%;
+        }
+        width: 20%;
+
+        > img {
+          border-radius: 10px;
+          width: 100%;
+          object-fit: cover;
+          height: auto;
+          box-shadow: 0px 21px 13px rgba(0, 0, 0, 0.05);
+          cursor: pointer;
+        }
+
+        .maxHeight {
+          height: 144px;
+        }
+      }
+    }
+  }
+}
