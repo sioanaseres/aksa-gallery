@@ -7,6 +7,7 @@ import Gallery from "./components/gallery/Gallery";
 import Reviews from "./components/reviews/Reviews";
 import Fees from "./components/fees/Fees";
 import Footer from "./components/footer/Footer";
+import HotOffer from "./components/hotOffer/HotOffer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Hero />
       <Offer />
+      <HotOffer />
       <Space />
       <Gallery />
       <Reviews />

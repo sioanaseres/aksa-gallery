@@ -1,0 +1,32 @@
+@import "../../styles/constants.scss";
+
+.wrapper {
+  .container {
+    .hotOffer {
+      border: 1px solid $secondary;
+      padding: 2rem;
+      border-radius: 5px;
+      .description {
+        @media (max-width: $lg) {
+          flex-direction: column;
+        }
+        display: flex;
+
+        img {
+          @media (max-width: $lg) {
+            width: 50%;
+            margin-bottom: 1rem;
+            margin-right: 0;
+          }
+          border-radius: 50%;
+          width: 30%;
+          margin-right: 2rem;
+        }
+
+        .text {
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+}

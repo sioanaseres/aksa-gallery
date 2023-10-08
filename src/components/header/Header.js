@@ -32,6 +32,9 @@ const Header = () => {
             <a href="#aboutUs">Despre noi</a>
           </li>
           <li>
+            <a href="#hotOffer">Oferte</a>
+          </li>
+          <li>
             <a href="#galerie">Galerie foto</a>
           </li>
 
