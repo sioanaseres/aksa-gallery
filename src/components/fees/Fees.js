@@ -31,10 +31,13 @@ const Fees = () => {
                 Costul rezervării exclusive a locației este după cum urmează:
               </p>
               <ul className={css.feeList}>
-                <li> Vineri: 1400 ron (5 ore)</li>
-                <li> Sâmbătă, Duminică: 1700 ron (5 ore)</li>
-                Intervale disponibile pentru zilele de week-end sunt: 10.00 –
-                15.00 sau 16.00 – 21.00
+                <li> Vineri: 1400 ron </li>
+                <li> Sâmbătă, Duminică: 1700 ron </li>
+                Intervale disponibile sunt: 
+                  <ul >
+                    <li>pentru vineri : 14-19</li>
+                    <li>pentru zilele de week-end : 12-19</li>
+                  </ul>
               </ul>
               <p>* Intervalele pot fi modificate și prelungite la cerere</p>
             </div>
