@@ -31,11 +31,8 @@ const Fees = () => {
                 Costul rezervării exclusive a locației este după cum urmează:
               </p>
               <ul className={css.feeList}>
-                <li> Tarife <b>Iunie, Septembrie:</b></li>
-                <li> Vineri: 1400 ron </li>
-                <li> Sâmbătă, Duminică: 1700 ron </li>
-                <li> Tarife <b>Iulie, August:</b></li>
-                <li> Vineri: 1500 ron </li>
+                <li> Tarife </li>
+                <li> Vineri: 1800 ron </li>
                 <li> Sâmbătă, Duminică: 2000 ron </li>
                 Intervale disponibile sunt: 
                   <ul >
